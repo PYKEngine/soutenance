@@ -1,0 +1,27 @@
+{
+  "name": "social-engine",
+  "version": "1.0.0",
+  "description": "Soutenance IFOCOP DIW-JS-10 Réseau social",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=production && node server/index",
+    "dev": "set NODE_ENV=development && nodemon server/index"
+  },
+  "author": "PYKENgine (Kevin Petitnicolas-Yoeusley)",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "nodemailer": "^6.3.1",
+    "request": "^2.88.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1"
+  }
+}
