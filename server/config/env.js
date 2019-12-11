@@ -26,9 +26,9 @@ function setDevEnv(app) {
   process.env.API_URL = 'http://localhost:5000';
   process.env.VUE_APP_URL = 'http://localhost:8080';
   process.env.DB_URL = 'mongodb://localhost:27017/PYKEngine-db';
-  process.env.TOKEN_SECRET = '27946982a9a4408996607fe95a6299f9';
-  process.env.GIT_CLIENT_ID = '3333cd1acb658607210c';
-  process.env.GIT_SECRET = '96a345f6cb48cf63057cebb5de5c370a6ff08ad6';
+  process.env.TOKEN_SECRET = '';
+  process.env.GIT_CLIENT_ID = '';
+  process.env.GIT_SECRET = '';
 }
 
 /**
@@ -39,10 +39,10 @@ function setProdEnv(app) {
   process.env.NODE_ENV = 'production';
   process.env.API_URL = 'http://localhost:5000';
   process.env.VUE_APP_URL = 'http://localhost:8080';
-  process.env.DB_URL = 'mongodb+srv://PYKEngine_admin:ddhrsSYHKKSUaCOo@cluster0-9rvif.azure.mongodb.net/test?retryWrites=true&w=majority';
-  process.env.TOKEN_SECRET = '9f4d50bfa6b2450a9ec766fc5104948e';
-  process.env.GIT_CLIENT_ID = '3333cd1acb658607210c';
-  process.env.GIT_SECRET = '96a345f6cb48cf63057cebb5de5c370a6ff08ad6';
+  process.env.DB_URL = '';
+  process.env.TOKEN_SECRET = '';
+  process.env.GIT_CLIENT_ID = '';
+  process.env.GIT_SECRET = '';
   app.use(express.json({ extended: false }));
   app.use(express.static(__dirname + '/../../dist'));
 }
